@@ -5,9 +5,9 @@
   "victimsUniversity": "University: Guru Ghasidas",
   "victimsLocality": "Locality: Chhapra",
   "crimeDate": "Date of incident: 2025-10-21",
-
+  
   "emailSubject": "Request for intervention to ensure fair and transparent investigation",
   "emailBody": "Respected Sir/Madam,\n\nI hope this message finds you in good health.\n\nMy name is [SENDER_NAME], and I am writing as a concerned citizen of India.\n\nI wish to respectfully draw your attention to a serious incident involving the death of {{victimName}}, aged {{victimAge}}, on {{crimeDate}} at {{victimsUniversity}}.\n\nAs reported by multiple news outlets, the incident has been described as a case of murder. However, the matter is currently under investigation, and there appears to be a lack of clear and timely communication regarding the progress of the case.\n\nGiven the seriousness of the incident and the distress faced by the family of the deceased, including his father {{victimsFather}}, I humbly request that the concerned authorities ensure a fair, transparent, and time-bound investigation.\n\nSuch an intervention would help uphold public confidence in the justice system and ensure that the victim's family receives justice.\n\nThank you for your time and consideration.\n\nYours sincerely,\n[SENDER_NAME]",
   "emailCount": "00"
-
+  
 }

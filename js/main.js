@@ -84,20 +84,20 @@ function loadInformation() {
 }
 sendEmailBtn.addEventListener("click", () => {
   const username = usernameInput.value.trim();
-
+  
   if (!username) {
     alert("Please enter your name");
     return;
   }
-
+  
   if (!checkbox.checked) {
     alert("Please accept the terms first");
     return;
   }
-
+  
   const recipients = "registry@supremecourt.gov.in,dgp.cg@gov.in";
   const subject = "Request for fair and transparent investigation";
-
+  
   const body = `Respected Sir/Madam,
 
 My name is ${username}, and I am writing as a concerned citizen of India.
@@ -110,12 +110,12 @@ Thank you for your time and consideration.
 
 Yours sincerely,
 ${username}`;
-
+  
   const encodedSubject = encodeURIComponent(subject);
   const encodedBody = encodeURIComponent(body);
-
+  
   const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-
+  
   if (isMobile) {
     // Mobile → open mail app (Gmail / Mail)
     window.location.href =
@@ -127,9 +127,9 @@ ${username}`;
       `&to=${recipients}` +
       `&su=${encodedSubject}` +
       `&body=${encodedBody}`;
-
+    
     const tab = window.open(gmailUrl, "_blank");
-
+    
     // Fallback if popup blocked
     if (!tab) {
       window.location.href =

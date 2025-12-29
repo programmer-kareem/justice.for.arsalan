@@ -9,13 +9,16 @@ body {
     margin: 0;
     padding: 0;
 }
-input::placeholder{
+
+input::placeholder {
     color: var(--text-clr2);
 }
-a{
+
+a {
     color: black;
     font-weight: bold;
 }
+
 #nav {
     height: 2em;
     font-size: 1.6em;
@@ -85,13 +88,16 @@ a{
     box-sizing: border-box;
     margin-top: 2em;
 }
+
 #externalDetailsBox {
-  display: inline;
+    display: inline;
 }
+
 #externalDetails,
 #externalDetailsBox a {
-  display: inline;
+    display: inline;
 }
+
 #helpBox {
     width: 90%;
     border: 2px solid black;
@@ -103,7 +109,8 @@ a{
     
     
 }
-#helpInteraction{
+
+#helpInteraction {
     width: 100%;
     height: auto;
     display: flex;
@@ -112,6 +119,7 @@ a{
     flex-direction: column;
     gap: .5em;
 }
+
 #usernameInput {
     border: 2px solid black;
     height: 2em;
@@ -119,17 +127,19 @@ a{
     outline: none;
     border-radius: 5px;
 }
-#checkboxDiv{
+
+#checkboxDiv {
     display: flex;
     align-items: center;
     font-size: .75em;
     box-sizing: border-box;
     width: 60vw;
 }
-#sendEmailBtn{
+
+#sendEmailBtn {
     width: 60vw;
     height: 2em;
-    border: 2px solid black; 
+    border: 2px solid black;
     box-sizing: border-box;
     font-size: 100%;
     font-weight: bold;
@@ -137,13 +147,15 @@ a{
     background-color: #C2C2C2;
     border-radius: 5px;
 }
-#footer{
+
+#footer {
     background-color: var(--bgc);
     color: var(--text-clr);
     width: 100vw;
     height: auto;
 }
-.contactLinks{
+
+.contactLinks {
     color: white;
     text-decoration: none;
 }
