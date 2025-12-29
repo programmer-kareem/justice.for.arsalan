@@ -1,0 +1,149 @@
+:root {
+    --text-clr: white;
+    --text-clr2: black;
+    --bgc: black;
+    --bgc2: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+input::placeholder{
+    color: var(--text-clr2);
+}
+a{
+    color: black;
+    font-weight: bold;
+}
+#nav {
+    height: 2em;
+    font-size: 1.6em;
+    display: flex;
+    align-items: center;
+    background-color: var(--bgc);
+    color: var(--text-clr);
+    width: 100%;
+}
+
+#languageSelectorBox {
+    width: 100%;
+    height: 2em;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#languageSelectorDropdown {
+    height: 100%;
+    width: 10em;
+    font-size: 1.5em;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#intro {
+    width: 100%;
+    height: auto;
+    margin-top: 3em;
+}
+
+#victimImg {
+    width: 90vw;
+    margin-left: 5%;
+    height: 90vw;
+    background-image: url(/assets/image/victimImg.jpg);
+    background-size: cover;
+    border: 5px solid black;
+}
+
+#victimsName {
+    font-size: 1.5em;
+}
+
+#victimInfoBox {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: .2em;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: var(--text-clr2);
+}
+
+#victimInfoBox>* {
+    margin: 0;
+}
+
+#CaseInformation {
+    width: 90%;
+    border: 2px solid black;
+    margin-left: 5%;
+    height: auto;
+    padding: 2px;
+    box-sizing: border-box;
+    margin-top: 2em;
+}
+#externalDetailsBox {
+  display: inline;
+}
+#externalDetails,
+#externalDetailsBox a {
+  display: inline;
+}
+#helpBox {
+    width: 90%;
+    border: 2px solid black;
+    margin-left: 5%;
+    height: auto;
+    padding: 2px;
+    box-sizing: border-box;
+    margin-top: 2em;
+    
+    
+}
+#helpInteraction{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5em;
+}
+#usernameInput {
+    border: 2px solid black;
+    height: 2em;
+    width: 60vw;
+    outline: none;
+    border-radius: 5px;
+}
+#checkboxDiv{
+    display: flex;
+    align-items: center;
+    font-size: .75em;
+    box-sizing: border-box;
+    width: 60vw;
+}
+#sendEmailBtn{
+    width: 60vw;
+    height: 2em;
+    border: 2px solid black; 
+    box-sizing: border-box;
+    font-size: 100%;
+    font-weight: bold;
+    color: var(--text-clr);
+    background-color: #C2C2C2;
+    border-radius: 5px;
+}
+#footer{
+    background-color: var(--bgc);
+    color: var(--text-clr);
+    width: 100vw;
+    height: auto;
+}
+.contactLinks{
+    color: white;
+    text-decoration: none;
+}
