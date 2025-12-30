@@ -31,6 +31,7 @@ function loadLanguage(lang) {
   fetch(`data/lang_${lang}.json`)
     .then(response => response.json())
     .then(data => {
+      emailCount = data.emailCount
       navPara.innerText = data.navTitle;
       informationPara.innerText = data.caseDescription;
       caseHeading.innerText = data.aboutCaseHeading;
@@ -43,7 +44,6 @@ function loadLanguage(lang) {
       counterNote.innerText = data.counterNote;
       infoAboutUs.innerText = data.disclaimer;
       selectLanguageText.innerText = data.selectLanguage;
-      emailCount = data.emailCount
     })
     .catch(error => {
       console.error("Error:", error);
