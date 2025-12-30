@@ -31,7 +31,6 @@ function loadLanguage(lang) {
   fetch(`data/lang_${lang}.json`)
     .then(response => response.json())
     .then(data => {
-      emailCount = data.emailCount
       navPara.innerText = data.navTitle;
       informationPara.innerText = data.caseDescription;
       caseHeading.innerText = data.aboutCaseHeading;
@@ -40,7 +39,6 @@ function loadLanguage(lang) {
       helpingHeading.innerText = data.helpHeading;
       usernameInput.placeholder = data.namePlaceholder;
       termsAndConditionPara.innerText = data.terms;
-      emailCounterPara.innerText = `${data.emailCounterLabel} ${emailCount}`;
       counterNote.innerText = data.counterNote;
       infoAboutUs.innerText = data.disclaimer;
       selectLanguageText.innerText = data.selectLanguage;
@@ -79,6 +77,8 @@ function loadInformation() {
       informationParagraphs[2].innerText = data.victimsUniversity;
       informationParagraphs[3].innerText = data.victimsFather;
       informationParagraphs[4].innerText = data.victimsLocality || "";
+      emailCount = data.emailCount;
+      emailCounterPara.innerText = `${data.emailCounterLabel} ${emailCount}`;
     })
     .catch(err => console.error(err));
 }
